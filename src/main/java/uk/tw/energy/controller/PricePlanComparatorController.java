@@ -49,7 +49,7 @@ public class PricePlanComparatorController {
                 ? ResponseEntity.ok(pricePlanComparisons)
                 : ResponseEntity.notFound().build();
     }
-
+//recommendations
     @GetMapping("/recommend/{smartMeterId}")
     public ResponseEntity<List<Map.Entry<String, BigDecimal>>> recommendCheapestPricePlans(@PathVariable String smartMeterId,
                                                                                            @RequestParam(value = "limit", required = false) Integer limit) {
